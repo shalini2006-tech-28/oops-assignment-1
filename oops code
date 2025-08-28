@@ -1,0 +1,29 @@
+// Base class User
+class User {
+    // Attributes
+    String name;
+    String email;
+
+    // Constructor
+    User(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    // Method to display user info
+    void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Email: " + email);
+    }
+}
+
+// Main class to test the User class
+public class Main {
+    public static void main(String[] args) {
+        // Create an object of User
+        User user1 = new User("Shalini", "shalini@example.com");
+
+        // Call the method to display info
+        user1.displayInfo();
+    }
+}
